@@ -1,0 +1,117 @@
+*
+{
+  padding: 9;
+  margin: 0;
+  box-sizing: border-box;
+}
+.slideshow
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-top: 50%;
+  background: #FFEB3B;;
+}
+.content
+{
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  perspective: 1000px;
+  position: relative;
+  transform: translate(-50%,-50%);
+  padding-top: 80px;
+}
+.content-carrousel
+{
+  width: 100%;
+  position: absolute;
+  animation: rotar 15s infinite linear;
+  transform-style: preserve-3d;
+}
+.content-carrousel:hover
+{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.content-carrousel figure
+{
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #fff;
+  position: absolute;
+}
+.content-carrousel figure:nth-child(1)
+{
+   transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(2)
+{
+   transform: rotateY(40deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(3)
+{
+   transform: rotateY(80deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(4)
+{
+   transform: rotateY(120deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(5)
+{
+   transform: rotateY(160deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(6)
+{
+   transform: rotateY(200deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(7)
+{
+   transform: rotateY(240deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(8)
+{
+   transform: rotateY(280deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(9)
+{
+   transform: rotateY(320deg) translateZ(300px);
+}
+.shadow
+{
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 20px 0 #fff;
+  position: absolute;
+  transition: 0.6s;
+}
+.content-carrousel img
+{
+  width: 100%;
+  height: 100%;
+ 
+}
+.content-carrousel img:hover
+{
+  position: absolute;
+  transition: 0.6s;
+}
+@keyframes rotar
+{
+  from{
+    transform: rotateY(0deg);
+  }to{
+    transform: rotateY(360deg);
+  }
+}
+
+
+
