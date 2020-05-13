@@ -60,6 +60,9 @@ input[name="r"]
   width: 100%;
   height: 100%;
 }
+#r1:checked ~.s1
+{
+  margin-left:0;
 #r2:checked ~.s1
 {
   margin-left: -20%;
