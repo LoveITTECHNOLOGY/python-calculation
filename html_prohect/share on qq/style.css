@@ -1,0 +1,86 @@
+@import  "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(green,blue);
+}
+.action
+{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.action span
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: green;
+    font-size: 2em;
+    
+}
+.action.active span
+{
+    transform: rotate(135deg);
+}
+.action ul
+{
+    position: absolute;
+    bottom: 55px;
+    min-width: 250px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+
+   
+}
+.action.active ul
+{
+    bottom: 65px;
+    visibility: visible;
+    transition: 0.3s;
+    opacity: 1;
+}
+.action.active ul li
+{
+   list-style: none;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 10px 0;
+   
+}
+.action ul li:hover
+{
+    font-weight: 600;
+}
+.action ul li:not(:last-child)
+{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.action ul li .fab fa-qq
+{
+   margin-right: 10px;
+   opacity: 0.2;
+}
+.action ul li:hover  .fab fa-qq
+{
+    opacity: 0.2;
+}
