@@ -1,0 +1,30 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(https://image.shutterstock.com/z/stock-photo-first-snow-on-braies-lake-colorful-autumn-landscape-in-italian-alps-naturpark-fanes-sennes-prags-709430047.jpg);
+    background-attachment: fixed;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    background: url(https://cdn.pixabay.com/photo/2013/11/28/10/03/autumn-219972_1280.jpg);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    transition: 5s;
+    pointer-events: none;
+}
+section:active:before
+{
+    width: 0;
+}
